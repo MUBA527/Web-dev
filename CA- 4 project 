@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICST University</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Custom styles for a cleaner, minimal look */
+        body {
+            font-family: 'Inter', sans-serif; /* Using Inter font for a modern feel */
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand img {
+            height: 40px; /* Adjust logo height */
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 33, 71, 0.7), rgba(0, 33, 71, 0.7)), url('https://www.digicatapult.org.uk/wp-content/uploads/2023/05/pexels-rostislav-uzunov-5011647-scaled-2000x0-c-default.jpeg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        .card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .section-title {
+            color: #002147;
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+        .list-group-item {
+            border: none;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .list-group-item:last-child {
+            border-bottom: none;
+        }
+        .footer {
+            background-color: #002147;
+            color: white;
+            padding: 40px 0;
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+        .footer a {
+            color: #b0c4de; /* Lighter blue for footer links */
+            text-decoration: none;
+        }
+        .footer a:hover {
+            color: white;
+        }
+        .social-icons a {
+            color: white;
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: color 0.2s ease-in-out;
+        }
+        .social-icons a:hover {
+            color: #b0c4de;
+        }
+        /* Button styling for 'See more' links */
+        .btn-link-custom {
+            color: #0056b3; /* Bootstrap primary blue */
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease-in-out;
+        }
+        .btn-link-custom:hover {
+            color: #003366; /* Darker blue on hover */
+            text-decoration: underline;
+        }
+        .rounded-elements {
+            border-radius: 0.5rem; /* Apply rounded corners to elements */
+        }
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Rounded corners for images */
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a class="visually-hidden-focusable" href="#main-content">Skip to main content</a>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+        <div class="container py-2">
+            <!-- University Name/Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <!-- Minimal image usage: Placeholder SVG icon or text -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mortarboard-fill me-2" viewBox="0 0 16 16">
+                    <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.75a.5.5 0 0 0 0 .894L3.5 7.5l-2.793 1.396a.5.5 0 0 0 0 .894l7.5 3.75a.5.5 0 0 0 .422 0l7.5-3.75a.5.5 0 0 0 0-.894L12.5 7.5l2.793-1.396a.5.5 0 0 0 0-.894z"/>
+                    <path d="M4.176 14.46a.5.5 0 0 1-.365-.347L.254 9.092a.5.5 0 1 1 .947-.316L4.444 13.9a.5.5 0 1 1-.268.56l-.001.001z"/>
+                </svg>
+                <span class="fw-bold fs-4 text-primary">ICST University</span>
+            </a>
+
+            <!-- Toggler for mobile navigation -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark" href="#">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold text-dark" href="#">Menu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="container mt-4">
+
+        <!-- Hero Section: University Mission/Leadership -->
+        <section class="hero-section text-center p-5 rounded-elements">
+            <h1 class="display-5 fw-bold mb-4">A New Era of Innovation</h1>
+            <p class="lead mb-4">ICST University continues its tradition of pioneering research and educational excellence. We are committed to shaping the future through groundbreaking discoveries and fostering the next generation of scientific leaders.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="#" class="btn btn-outline-light btn-lg rounded-elements">Undergraduate Programs</a>
+                <a href="#" class="btn btn-outline-light btn-lg rounded-elements">Postgraduate Research</a>
+            </div>
+        </section>
+
+        <!-- Featured Section: New Touch Technology (already science/tech focused) -->
+        <section class="row align-items-center mb-5 p-4 bg-white rounded-elements shadow-sm">
+            <div class="col-md-8 order-md-1">
+                <h2 class="section-title mb-3">What if robots could feel? New Touch Technology</h2>
+                <p class="lead">Discover groundbreaking research at ICST University that explores new frontiers in haptic technology, enabling advanced robotic interactions and capabilities.</p>
+                <a href="#" class="btn btn-link-custom">Learn more about this research &rarr;</a>
+            </div>
+            <div class="col-md-4 order-md-2 text-center text-md-end mt-4 mt-md-0">
+                <img src="https://www.newelectronics.co.uk/media/eg5biyxc/robotics-20week-docx.jpg?width=1002&height=564&v=1d9d75f770520b0" alt="Robot hand demonstrating haptic technology" class="img-fluid">
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="row mb-5">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <a href="#" class="d-block p-3 bg-white text-dark text-center text-decoration-none rounded-elements shadow-sm">Research Facilities</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <a href="#" class="d-block p-3 bg-white text-dark text-center text-decoration-none rounded-elements shadow-sm">Innovation Hubs</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <a href="#" class="d-block p-3 bg-white text-dark text-center text-decoration-none rounded-elements shadow-sm">Research Initiatives</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <a href="#" class="d-block p-3 bg-white text-dark text-center text-decoration-none rounded-elements shadow-sm">Industry Partnerships</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <a href="#" class="d-block p-3 bg-white text-dark text-center text-decoration-none rounded-elements shadow-sm">Alumni Network</a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <a href="#" class="d-block p-3 bg-white text-dark text-center text-decoration-none rounded-elements shadow-sm">Student Life</a>
+            </div>
+        </section>
+
+        <div class="row">
+            <!-- News Section -->
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4 rounded-elements">
+                    <h2 class="section-title">Latest Discoveries</h2>
+                    <p class="text-muted">Updates from across the University's research divisions</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="fw-semibold mb-1">Pioneers in Tech Honored</h5>
+                            <p class="text-muted mb-0">ICST University celebrates 8 distinguished individuals for their significant contributions to technology and scientific advancement.</p>
+                            <a href="#" class="btn btn-link-custom btn-sm">Read more</a>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 class="fw-semibold mb-1">Record Research Grants Secured</h5>
+                            <p class="text-muted mb-0">Eleven senior researchers at ICST University have been awarded major grants from leading global research foundations, setting a new institutional record.</p>
+                            <a href="#" class="btn btn-link-custom btn-sm">Read more</a>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 class="fw-semibold mb-1">Advancing AI Ethics in Robotics</h5>
+                            <p class="text-muted mb-0">A team of ICST researchers is pioneering new frameworks for ethical artificial intelligence in autonomous robotic systems, focusing on real-world applications.</p>
+                            <a href="#" class="btn btn-link-custom btn-sm">Read more</a>
+                        </li>
+                    </ul>
+                    <div class="text-end mt-3">
+                        <a href="#" class="btn btn-link-custom">See more news &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Events Section -->
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4 rounded-elements">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <p class="text-muted">Conferences, workshops, and public lectures</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                            <h5 class="fw-semibold mb-1">Admissions - Prospective Student Webinars: Monday 30 June to Monday 7 July</h5>
+                            <p class="text-muted mb-0">Join our online sessions to learn more about ICST's cutting-edge science and engineering programs and the application process.</p>
+                            <a href="#" class="btn btn-link-custom btn-sm">Register now</a>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 class="fw-semibold mb-1">ICST Innovation Showcase: Thursday 10 July and Friday 11 July</h5>
+                            <p class="text-muted mb-0">Explore our campus and discover the future of technology at our annual Open Days, featuring live demos and research presentations.</p>
+                            <a href="#" class="btn btn-link-custom btn-sm">Book your place</a>
+                        </li>
+                        <li class="list-group-item">
+                            <h5 class="fw-semibold mb-1">Exhibitions - Future Tech Frontiers: until Saturday 6 December</h5>
+                            <p class="text-muted mb-0">An immersive exhibition at the University's Tech Gallery, showcasing the next generation of virtual reality, sustainable energy, and biotech innovations.</p>
+                            <a href="#" class="btn btn-link-custom btn-sm">View exhibition details</a>
+                        </li>
+                    </ul>
+                    <div class="text-end mt-3">
+                        <a href="#" class="btn btn-link-custom">See more events &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Student Perspectives & Social Media -->
+        <section class="row mb-5">
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4 rounded-elements">
+                    <h2 class="section-title">Student Voices</h2>
+                    <h5 class="fw-semibold mb-2">Exploring Data Science: A unique course only found at ICST</h5>
+                    <p class="text-muted mb-3">Second-year student Aisha provides insights into the interdisciplinary Data Science program, highlighting its unique blend of theory and practical application at ICST.</p>
+                    <a href="https://www.youtube.com/" class="btn btn-link-custom d-inline-flex align-items-center" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-youtube me-2"></i> Watch on YouTube
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4">
+                <div class="card p-4 rounded-elements">
+                    <h2 class="section-title">ICST on Instagram</h2>
+                    <p class="text-muted mb-3">Atmika's most memorable ICST moment was her graduation day, and she shares some advice for those just starting their ICST journey. See more of ICST's places and people by following us on Instagram.</p>
+                    <a href="https://www.instagram.com/icst.edu.lk/" class="btn btn-link-custom d-inline-flex align-items-center" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram me-2"></i> Follow us on Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer p-5 rounded-elements">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">ICST University</h5>
+                    <p class="text-white-50">© 2025 ICST University</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/icst.edu.lk/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/icst.edu.lk/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 col-sm-6 mb-3 mb-md-0">
+                    <h6 class="text-white mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact the University</a></li>
+                        <li><a href="#">Accessibility statement</a></li>
+                        <li><a href="#">Freedom of information</a></li>
+                        <li><a href="#">Privacy policy and cookies</a></li>
+                        <li><a href="#">Statement on Modern Slavery</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">University A-Z</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+                    <h6 class="text-white mb-3">Study at ICST</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Undergraduate Programs</a></li>
+                        <li><a href="#">Postgraduate Research</a></li>
+                        <li><a href="#">Continuing Education</a></li>
+                        <li><a href="#">Executive & Professional Education</a></li>
+                        <li><a href="#">Courses in Innovation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3 mb-md-0">
+                    <h6 class="text-white mb-3">About the University</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our Structure & Departments</a></li>
+                        <li><a href="#">Support ICST</a></li>
+                        <li><a href="#">Career Opportunities</a></li>
+                        <li><a href="#">Campus Maps</a></li>
+                        <li><a href="#">Visiting ICST</a></li>
+                    </ul>
+                    <h6 class="text-white mb-3 mt-3">Research at ICST</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Research Highlights</a></li>
+                        <li><a href="#">About ICST Research</a></li>
+                        <li><a href="#">Public Engagement in Science</a></li>
+                        <li><a href="#">Spotlight on Breakthroughs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS CDN (Popper.js and Bootstrap JS Bundle) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcgaFVy38MVbnE+I7bKkfjx0y5m" crossorigin="anonymous"></script>
+</body>
+</html>
